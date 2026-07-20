@@ -1,9 +1,15 @@
-# Abiroy Karmakar — Portfolio
+# Abiroy Karmakar — Personal Portfolio
 
-## Description
 A modern, responsive, and beautifully designed personal portfolio website for Abiroy Karmakar, an aspiring software engineer. This project showcases projects, skills, achievements, and professional journey, built with high-performance web technologies.
 
-## Tech Stack
+## ✨ Features
+- **Responsive Design**: Fully responsive layout tailored for mobile, tablet, and desktop viewing.
+- **Dynamic Routing**: Single Page Application (SPA) feel with fast route transitions.
+- **Interactive UI**: Smooth animations and interactive components.
+- **Dark/Light Mode**: Built-in support for theme toggling.
+- **Configurable Data**: Easily update portfolio contents (skills, projects, etc.) via a centralized data configuration file.
+
+## 🛠 Tech Stack
 - **Frontend Framework**: React 19
 - **Build Tool**: Vite
 - **Routing**: TanStack Router
@@ -13,7 +19,7 @@ A modern, responsive, and beautifully designed personal portfolio website for Ab
 - **Animation**: Framer Motion
 - **Icons**: Lucide React
 
-## Architecture Diagram
+## 🏗 Architecture Diagram
 ```mermaid
 graph TD;
     A[Vite Bundler] --> B(React Application)
@@ -32,9 +38,9 @@ graph TD;
     style C fill:#ff4154,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
-## Folder Structure
+## 📁 Folder Structure
 ```text
-karmakar_abiroy-portfolio/
+Portfolio_Abiroy21/
 ├── index.html           # Main HTML entry point
 ├── package.json         # Project dependencies and scripts
 ├── vite.config.ts       # Vite bundler configuration
@@ -45,7 +51,8 @@ karmakar_abiroy-portfolio/
 │   ├── styles.css       # Global Tailwind CSS entry
 │   ├── assets/          # Static assets (images, icons)
 │   ├── components/      # React Components
-│   │   ├── portfolio/   # Page-specific portfolio sections (Hero, About, etc.)
+│   │   ├── portfolio/   # Page-specific portfolio sections
+│   │   │   └── data.ts  # Centralized portfolio data
 │   │   └── ui/          # Reusable UI components (shadcn/ui)
 │   ├── hooks/           # Custom React hooks
 │   ├── lib/             # Utility functions
@@ -53,41 +60,46 @@ karmakar_abiroy-portfolio/
 └── dist/                # Production build output (generated after build)
 ```
 
-## How to Run It
+## 🚀 Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher recommended)
 - `npm` (Node Package Manager)
 
-### From the Command Line / Terminal
-1. **Install Dependencies:**
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/abhranilsingharoy-cloud/Portfolio_Abiroy21.git
+   cd Portfolio_Abiroy21
+   ```
+
+2. **Install Dependencies:**
    ```bash
    npm install
    ```
-2. **Start the Development Server:**
-   ```bash
-   npm run dev
-   ```
-   *The server will start, typically at `http://localhost:8080`. Open this URL in your browser to view the site.*
-3. **Build for Production:**
-   ```bash
-   npm run build
-   ```
-4. **Preview Production Build:**
-   ```bash
-   npm run preview
-   ```
 
-### From Visual Studio Code (VS Code)
-1. **Open the Project:**
-   Launch VS Code and open the `karmakar_abiroy-portfolio` folder.
-2. **Open the Integrated Terminal:**
-   Go to the top menu and select **Terminal > New Terminal**, or use the shortcut `` Ctrl + ` `` (backtick).
-3. **Install Dependencies (First time only):**
-   In the terminal, type `npm install` and press Enter.
-4. **Run the Project:**
-   In the terminal, type `npm run dev` and press Enter. 
-5. **View the Site:**
-   VS Code will display a local URL (e.g., `http://localhost:8080`). You can `Ctrl + Click` (or `Cmd + Click` on Mac) the link right in the terminal to automatically open the website in your default browser.
-6. **Stop the Server:**
-   Click inside the terminal and press `Ctrl + C`, then type `Y` and hit Enter if prompted to terminate the batch job.
+### Running Locally
+
+To start the development server:
+```bash
+npm run dev
+```
+*The server will start, typically at `http://localhost:5173` or `http://localhost:8080`. Open this URL in your browser to view the site.*
+
+### Building for Production
+```bash
+npm run build
+```
+To preview the production build locally:
+```bash
+npm run preview
+```
+
+## ✏️ Customization
+All personal data (Name, Role, Projects, Skills, Contact Info, etc.) is centralized in `src/components/portfolio/data.ts`. You can easily update this file to reflect your own portfolio details without having to dig into component logic.
+
+## 📬 Contact
+- **Email**: karmakarabiroy@gmail.com
+- **LinkedIn**: [Abiroy Karmakar](https://www.linkedin.com/in/abiroy-karmakar-1ab101338)
+- **GitHub**: [AbiroyKarmakar21](https://github.com/AbiroyKarmakar21)
